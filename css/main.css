@@ -1,0 +1,339 @@
+/* =========================
+      GENERAL STYLES
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+a:hover {
+  color: #6633ff;
+}
+
+body {
+  font-family: 'Rasa', sans-serif;
+}
+
+/* =========================
+      NAVIGATION
+========================= */
+.main-nav {
+  width: 100%;
+  background: black;
+  min-height: 30px;
+  padding: 10px;
+  top: 0;
+  position: fixed;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 1em;
+}
+
+.nav .name {
+  display: block;
+  margin-right: auto;
+  color: white;
+}
+
+.nav li {
+  padding: 10px 10px 10px 10px;
+}
+
+.nav a {
+  transition: all .5s;
+  text-decoration: none;
+  color: #999;
+}
+
+.nav a:hover {
+  color: white;
+}
+
+/* =========================
+      HEADER
+========================= */
+header {
+  text-align: center;
+  background: url('/Users/MaryVDang/Desktop/Tech Degree/MaryDangP12GitHubPortfolio/img/photos/header.jpg');
+  display: block;
+  padding-top: 65px;
+  line-height: 2em;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+}
+
+.clearfix {
+  overflow: hidden;
+}
+
+.stretched {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 12em;
+}
+
+.greeting {
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  display: table;
+  margin: 3px 0 35px 50px;
+}
+
+/* =========================
+      MAIN
+========================= */
+main {
+  text-align: center;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* About */
+#about {
+
+}
+/* Portfolio */
+#portfolio {
+  padding-top: 10px;
+}
+
+.preview-img {
+  width: 100%;
+}
+
+.space {
+  padding-top: 10px;
+}
+
+/* Overlay */
+
+#overlay {
+  background: rgba(80, 84, 91, 0.9);
+  z-index: 5;
+  width: 100%;
+  height: 120%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 100px;
+  display: none;
+}
+
+#overlay-image {
+  display: block;
+  margin: -40px auto 0;
+  width: 310px;
+  height: 500px;
+  border-radius: 4px;
+  position: relative;
+}
+
+#overlay p {
+  position: relative;
+  display: block;
+  color: #61DFA2;
+  width: 300px;
+  font-size: 1em;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#exit {
+  display: block;
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  top: 0;
+  right: 0;
+}
+
+#exit img {
+  height: 100%;
+  padding: -10px;
+}
+
+/* Contact */
+#contact {
+  padding-top: 10px;
+}
+
+#contact a {
+  text-decoration: none;
+  color:
+}
+
+#contact a:hover {
+  text-decoration: underline;
+}
+
+.button {
+  background-color: #7bea97;
+  border: dotted;
+  color: white;
+  padding: 13px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 20px;
+}
+/* =========================
+      FOOTER
+========================= */
+
+footer {
+  text-align: center;
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 10px;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+.svg {
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: .6;
+  transition: all .5s;
+}
+
+a.social:hover {
+  opacity: 1;
+}
+.clearfix {
+  clear: both;
+}
+
+/* =========================
+      MEDIA QUERIES
+========================= */
+@media (min-width: 360px) {
+  .nav {
+    font-size: 1.15em;
+  }
+
+  .stretched {
+    height: 14em;
+  }
+
+  .greeting {
+    margin: 15px auto;
+  }
+
+  #overlay-image {
+    width: 350px;
+    height: 550px;
+  }
+
+  #overlay p {
+    width: 350px;
+    font-size: 1.25em;
+  }
+}
+
+@media (min-width: 640px) {
+  .stretched {
+    height: 18em;
+  }
+
+  .greeting {
+    font-size: 2em;
+    margin: 60px auto;
+  }
+
+  #overlay-image {
+    float: left;
+    padding-left: 50px;
+    width: 400px;
+    height: 700px;
+  }
+
+  #overlay p {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    font-size: 2em;
+  }
+}
+
+@media (min-width: 768px) {
+  .col {
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: top;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  #portfolio {
+    display: inline-block;
+    width: 80%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav {
+    font-size: 1.50em;
+  }
+
+  .stretched {
+    height: 22em;
+  }
+
+  .greeting {
+    margin: 100px auto;
+    font-size: 3em;
+  }
+
+  #overlay-image {
+    margin: auto;
+    padding-left: 75px;
+    width: 500px;
+    height: 700px;
+  }
+
+  #overlay p {
+    width: 480px;
+  }
+
+  #exit {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (min-width: 1224px) {
+  #portfolio {
+    width: 70%;
+  }
+
+  #overlay p {
+    width: 700px;
+  }
+}
+
+@media (min-width: 1450px) {
+  #overlay-image {
+    margin-top: -50px;
+    width: 600px;
+    height: 830px;
+  }
+}
