@@ -68,6 +68,7 @@ header {
   line-height: 2em;
   font-family: 'Dancing Script', cursive;
   font-weight: 700;
+  min-height: 100%;
 }
 
 .clearfix {
