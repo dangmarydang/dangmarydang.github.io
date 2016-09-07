@@ -62,13 +62,12 @@ body {
 ========================= */
 header {
   text-align: center;
-  background: url('../img/photos/header.jpg');
+  background-image: url('../img/photos/header.jpg');
   display: block;
   padding-top: 65px;
   line-height: 2em;
   font-family: 'Dancing Script', cursive;
   font-weight: 700;
-  min-height: 100%;
 }
 
 .clearfix {
