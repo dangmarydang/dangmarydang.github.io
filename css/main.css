@@ -109,6 +109,7 @@ main {
 
 .preview-img {
   width: 100%;
+  border: 10px solid #87cefa;
 }
 
 .space {
